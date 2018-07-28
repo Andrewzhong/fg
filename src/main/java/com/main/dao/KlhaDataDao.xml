@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.main.dao.KlhaDataDao">
+    <!--传感器数据查询 查询全部数据-->
+    <select id="GetallSensorData" resultType="com.main.entity.KlhaData">
+      SELECT sn,data_time,sensor_name,channel_num,channel_name,value FROM data_history
+    </select>
+    <select id="SelectBySensorId" resultType="com.main.entity.KlhaData">
+
+    </select>
+    <!--传感器数据更新-->
+    <insert id="InsertSensorData"></insert>
+    <!--传感器数据插入-->
+    <update id="UpdateSensorData"></update>
+    <!--传感器数据删除-->
+    <delete id="DeleteSensorData"></delete>
+</mapper>
